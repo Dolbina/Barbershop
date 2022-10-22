@@ -14,17 +14,15 @@
 <body>
   <header class="header">
     <div class="container header-container">
-        <div class="container-nav">
-        <nav>
-        <a href="./index.html"><img src="./image/Logo.svg" alt="Logo"></a>
+        <nav class="header-nav">
+        <a class="logo"href="./index.html"><img src="./image/Logo.svg" alt="Logo"></a>
         <ul class="list nav-list">
-            <li><a class="link current nav" href="#">About</a></li>
+            <li><a class="link nav" href="#about">About</a></li>
             <li><a class="link nav" href="#prices">Services and prices</a></li>
             <li><a class="link nav" href="#barbers">Barbers</a></li>
             <li><a class="link nav" href="#">Contacts</a></li>
         </ul>
         </nav>
-        </div>
         <div class="container-tel">
         <a class="link tel" href="tel:+380441111111">+38 044 111 11 11</a>
         <button type="button" class="button btn-header">Online-booking</button>
@@ -33,17 +31,19 @@
   </header>  
 </body>
 <main>
-    <section>
-        <div class="container">
+    <section >
+        <div class="container hero-container">
+            <div class="container-social"> 
+                <ul class="list social-list">
+                    <li><a class="link hero-social" href="#" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+                    <li><a class="link hero-social" href="#" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+                </ul>
+                </div>
+            <div id="about" class="hero-wrap">
         <p class="subtitle">A hair salon for men in Kyiv</p>
         <h1 class="hero-title">BarberShop</h1>
         <p class="hero-text">We are experts in trendy men’s haircuts.
             We work quickly, carefully and with style.</p>
-            <div class="container-social"> 
-            <ul class="list">
-                <li><a class="link hero-social" href="#" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
-                <li><a class="link hero-social" href="#" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
-            </ul>
         </div>
         </div>
     </section>
@@ -128,7 +128,7 @@
     </div>
     </section>
     <section class="barbers" id="barbers">
-        <div class="container">
+        <div class="container container-barbers">
         <p class="subtitle-barbers">For true enjoyers of the atmosphere</p>
         <h2 class="title-barbers">Our barbers</h2>
         <ul class="list">
