@@ -70,7 +70,24 @@ outline: 2px solid tomato;
     
 }
 
+.header-container{
+display: flex;
+padding-right: 17px;
+padding-left: 100px;
+padding-top: 40px;
+align-items: center;
+}
+
+.container-nav{
+display: flex;
+justify-content: start;
+}
+
+.container-tel{
+display: flex;
+}
 .nav{
+   
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -108,6 +125,12 @@ outline: 2px solid tomato;
 }
 
 .btn-header{
+    display: flex;
+    min-width: 160px;
+    height: 40px;
+    margin-left: 43px;
+    padding: 12px 20px;
+
 
 }
 .button:hover,
