@@ -152,10 +152,14 @@ background-color: var(--active-color);
 .hero-wrap{
     padding: 272px 100px 208px 100px;
     background-color: rgba(25, 28, 38, 0.2);
-    flex-grow: 1;  
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(./image/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
 }
 .container-social{
-
+width: 100px;
 }
 
 .social-list{
@@ -187,6 +191,7 @@ background-color: var(--active-color);
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--hero-color);
+    max-width: 360px;
 }
 .hero-social{
     font-weight: 600;
