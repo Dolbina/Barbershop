@@ -290,6 +290,31 @@ gap: 30px;
     }
 
     /* price */
+    .prices {
+        /* display: block;
+        padding-right: 215px;
+    padding-left: 215px; */
+}
+.prices-wrap{
+display: flex;
+margin-bottom: 44px;
+
+}
+
+.prices-right{
+    
+min-width: 570px;
+
+margin-right: 30px;
+
+}
+
+
+.prices-left{
+    
+   min-width: 570px;
+    
+}
 
     .subtitle-prices{
         font-weight: 600;
