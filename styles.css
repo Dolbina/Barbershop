@@ -49,6 +49,11 @@ padding-right: 15px;
 margin: 0 auto;
 outline: 2px solid tomato;
 }
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
 
 /* скритий заголовок */
 
@@ -226,33 +231,65 @@ padding-left: 27px;
     }
 
     /* About */
+    .container-about{
+display: flex;
+gap: 30px;
+    }
+.container-text{
+    width: 470px;
+}
+    
 
     .subtitle-about{
+        display: inline-block;
         font-weight: 600;
         font-size: 11px;
         line-height: 1.36;
         text-transform: uppercase;
         color: var(--secondary-color);
+        margin-bottom: 20px;
+       
+        
     }
+
+    .subtitle-about::before{
+        display: inline-block;
+        content:'';
+        width: 60px;
+        height: 1px;
+      background-color: var(--secondary-color) ;
+      margin-right: 20px;
+      
+      
+        
+    }
+    
     .about-title{
-        font-family: 'Raleway';
+        font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 42px;
         line-height: 1.17;
         letter-spacing: 0.05em;
         color: var(--secondary-color);
+        margin-bottom: 20px;
+       
+       
     }
     .about-text{
         font-size: 18px;
         line-height: 1.67;
         letter-spacing: 0.02em;
+        margin-bottom: 20px;
     }
 
     .about-text-second{
         font-size: 14px;
         line-height: 1.86;
         letter-spacing: 0.02em;
+        margin-bottom: 40px;
     }
+
+    /* price */
 
     .subtitle-prices{
         font-weight: 600;
@@ -262,7 +299,7 @@ padding-left: 27px;
         color: var(--subtitle-color);
     }
     .title-prices{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 42px;
     line-height: 1.36;
     letter-spacing: 0.05em;
@@ -457,22 +494,53 @@ letter-spacing: 0.02em;
 
 /* footer */
 
+.footer{
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.footer-container{
+display: flex;
+align-items: center;
+}
+
 .footer-text{
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: var(--hero-color);
+
+    
 }
 
-.footer-social{
+.footer-list {
+   
+display: flex;
+margin-left: auto;
+}
+.footer-soc{ 
+display: inline-flex;
+}
+
+.footer-social{  
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: var(--secondary-color);
     transition: color 250ms linear;
+    margin-left: 40px;
 }
+.footer-soc:first-child::before{
+    content: '';
+   
+width: 60px;
+height: 1px;
+background-color: var(--secondary-color);
+margin-top: 10px;
+}
+
 .footer-social:hover,
 .footer-social:focus{
     color: var(--active-color);
