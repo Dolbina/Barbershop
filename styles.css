@@ -1,3 +1,13 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
 :root {
   --primary-color: #555555;
   --secondary-color: #303030;
@@ -380,6 +390,7 @@ flex-wrap: wrap;
     height: 133px;
     background-color: var(--background-barbers);
     padding: 20px 24px;
+    text-align: center;
    
 }
 
@@ -392,13 +403,7 @@ flex-wrap: wrap;
     margin-top: 30px;
 }
 
-.benefits-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  
-  .benefits-item:nth-child(even) {
-    margin-top: 30px;
-  }
+
 
 .digit {
   font-weight: 700;
@@ -410,6 +415,17 @@ flex-wrap: wrap;
   margin-bottom: 6px;
 }
 
+.digit::after{
+  display: block;
+  content: '+';
+  color: var(--active-color);
+font-weight: 600;
+font-size: 16px;
+line-height: 1.38;
+vertical-align: top;
+text-align: center;
+
+}
 .benefits-wrap{
 margin-left: 130px;
 max-width: 500px;
