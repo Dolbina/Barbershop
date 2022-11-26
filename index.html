@@ -141,8 +141,8 @@
         <div class="container container-barbers">
         <p class="subtitle-barbers">For true enjoyers of the atmosphere</p>
         <h2 class="title-barbers">Our barbers</h2>
-        <ul class="list">
-                <li>
+        <ul class="barbers-list list">
+                <li class="barbers-items">
                     <img src="./image/barber.jpg" alt="boy hairdresser cutting hair" width="370">
                 <h3 class="title-barbers-item">John Smith</h3>
                 <p class="barbers-text-item">Extreme Barber</p>
@@ -151,12 +151,12 @@
                 <li><a href="#"target="_blank" rel="noopener noreferrer nofollow"><img src="" alt="twitter"></a></li>
                 <li><a href="#"target="_blank" rel="noopener noreferrer nofollow"><img src="" alt="facebook"></a></li>
                 <li><a href="#"target="_blank" rel="noopener noreferrer nofollow"><img src="" alt="linkedin"></a></li> -->
-                <li>
+                <li class="barbers-items">
                     <img src="./image/barber2.jpg" alt="boy hairdresser cutting hair" width="370">
                 <h3 class="title-barbers-item">Michele Doe</h3>
                 <p class="barbers-text-item">Extreme Barber</p>
             </li>
-                <li>
+                <li class="barbers-items">
                     <img src="./image/barber3.jpg" alt="boy hairdresser cutting hair" width="370">
                 <h3 class="title-barbers-item">Alan Black</h3>
                 <p class="barbers-text-item">Extreme Barber</p>
@@ -168,37 +168,42 @@
         <div class="container">
         <h2 class="visually-hidden">Portfolio</h2>
         <p class="subtitle-portfolio">In Latin, "barba" means "beard"</p>
-        <ul class="list">
-            <li><img src="./image/barber4.jpg" alt="
+        <ul class="portfolio-list list">
+            <li class="portfolio-items"><img src="./image/barber4.jpg" alt="
                 hairdresser cutting hair with a clipper" width="270"></li>
-            <li><img src="./image/barber5.jpg" alt="barber shaving man's beard" width="270"></li>
-            <li><img src="./image/barber6.jpg" alt="
+            <li class="portfolio-items"><img src="./image/barber5.jpg" alt="barber shaving man's beard" width="270"></li>
+            <li class="portfolio-items"><img src="./image/barber6.jpg" alt="
                 the hairdresser put a towel to the man's face" width="270"></li>
-            <li><img src="./image/barber7.jpg" alt="barber cutting a man's hair" width="270"></li>
+            <li class="portfolio-items"><img src="./image/barber7.jpg" alt="barber cutting a man's hair" width="270"></li>
         </ul>
     </div>
     </section>
-    <section>
+    <div class="contacts-wrap">
         <div class="container">
+    <section class="online-contacts section">
         <h2 class="online-title">Online-booking</h2>
-        <button type="button" class="button btn-send">Send</button>
-        </div>
+        <form class="online-form">
+            <input class="online-input online-item" type="text" name="name" placeholder="Name*">
+            <input class="online-input online-item" type="text" name="tel" placeholder="Phone*">
+<textarea class="online-textarea online-item" name="feedback" placeholder="Message"></textarea>
+<button type="submit" class="button btn-send">Send</button>
+        </form>
     </section>
-    <section>
-        <div class="container">
+    <section class="contacts-address section">
         <h2 class="contacts-title">Contacts</h2>
         <address class="address">
             <a class="link link-map"href="https://goo.gl/maps/6RVR3knhm1gNCTDt8" target="_blank" rel="noopener noreferrer nofollow"><br>st. Vasilkivska, 7A</br>
                 Kyiv, 08132</a>
-            <ul class="list">
-                   <li><a class="link link-tel"href="tel:+380441111111">+38 044 111 11 11</a></li>
-                   <li><a class="link-mail"href="mailto:barbershop@email.com">barbershop@email.com</a></li>  
+            <ul class="contacts-list list">
+                   <li class="contacts-items"><a class="link link-tel"href="tel:+380441111111">+38 044 111 11 11</a></li>
+                   <li class="contacts-items"><a class="link-mail"href="mailto:barbershop@email.com">barbershop@email.com</a></li>  
             </ul>
         </address>
         <p class="subtitle-contacts">Working hours</p>
         <p class="contacts-text">Every day from 9:00 to 22:00</p>
-        </div>
         </section>
+    </div>
+    </div>
 </main>
 <footer class="footer">
     <div class="container">
