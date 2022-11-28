@@ -57,7 +57,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .section {
   padding-top: 120px;
@@ -94,6 +94,11 @@ body {
 .logo {
   margin-right: 131px;
 }
+
+.logo-icon{
+color: var(--secondary-color);
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -298,6 +303,16 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
+}
+
+.btn-about{
+color: var(--secondary-color);
+transition: color 250ms liner;
+}
+
+.btn-about:hover,
+.btn-about:focus{
+  color: var(--title-color);
 }
 
 /* price */
@@ -715,6 +730,8 @@ transition: color 250ms linear;
 }
 
 .link-map {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.67;
@@ -727,6 +744,8 @@ transition: color 250ms linear;
 }
 
 .link-tel {
+  display: flex;
+  align-items: center;
 font-weight: 400;
 font-size: 18px;
 line-height: 1.67;
@@ -737,6 +756,8 @@ color: var(--hero-color);
 }
 
 .link-mail {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -747,14 +768,6 @@ color: var(--hero-color);
   transition: color 250ms linear;
 }
 
-.link-map:hover,
-.link-map:focus,
-.link-tel:hover,
-.link-tel:focus,
-.link-mail:hover,
-.link-mail:focus {
-  color: var(--active-color);
-}
 
 .subtitle-contacts {
   position: relative;
@@ -788,7 +801,7 @@ color: var(--hero-color);
 .icon{
   fill: currentColor;
   margin-right: 20px;
-  background-color: transparent;
+  
 
 }
 
