@@ -413,11 +413,27 @@ body {
 }
 
 .prices-wrap {
-  display: flex;
+  display: block;
   width: 100%;
-  justify-content: space-between;
   margin-bottom: 44px;
+  background-image: linear-gradient( #171A24 0%, rgba(23, 26, 36, 0.2) 100%,  #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+  /* @media screen and (min-width: 768px){
+    .prices-wrap{
+      display: block;
+    }
+  } */
+  @media screen and (min-width: 1200px){
+    .prices-wrap{
+      display: flex;
+      justify-content: space-between;
+  
+    }
+  }
 
 .subtitle-prices {
   position: relative;
@@ -443,32 +459,57 @@ body {
 
 .title-prices {
   font-family: "Raleway", sans-serif;
-  font-size: 42px;
-  line-height: 1.36;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--title-color);
   margin-bottom: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width:768px){
+  .title-prices{
+    font-size: 42px;
+  line-height: 1.36;
+  margin-right: 0;
+  }
 }
 
 .prices-text {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 1.42;
   letter-spacing: 0.02em;
   color: var(--hero-color);
 }
+ @media screen and (min-width: 768px){
+    .prices-text{
+        font-size: 18px;
+  line-height: 1.67;
+    }
+  }
 
-.list-prices {
-  padding: 30px 20px;
-  width: calc((100% - 30px) / 2);
+
+  .list-prices + .list-prices {
+  margin-top: 20px;
 }
 
-.list-prices:nth-child(2n + 1) {
+ @media screen and (min-width: 1200px){
+    .list-prices{
+      padding: 30px 20px;
+  width: calc((100% - 30px) / 2); 
+    }
+  .list-prices:nth-child(2n + 1) {
   background-image: linear-gradient(#171a24 0%, rgba(23, 26, 36, 0.2) 100%, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .list-prices:nth-child(2n) {
   background-image: linear-gradient(#090b13 0%, rgba(9, 11, 19, 0.2) 100%, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
+    }
+  
+
+
 
 .item-prices {
   display: flex;
@@ -656,11 +697,21 @@ body {
 
 .barbers-list {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 64px;
 }
 
 .barbers-items {
-  width: calc((100% - 60px) / 3);
+width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+   .barbers-list {
+    gap: 30px;
+   }
+  .barbers-items{
+  width: calc((100% - 60px) / 3); 
+}
 }
 
 .soc-list {
